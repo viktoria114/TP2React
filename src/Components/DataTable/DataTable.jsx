@@ -9,6 +9,7 @@ import {
   TableRow,
   Button,
   Toolbar,
+  Typography,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { useEffect, useState } from "react";
@@ -40,7 +41,10 @@ export const DataTable = () => {
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
       <Toolbar />
       <div className="contenedor-principal">
-        <h1>Lista de Productos</h1>
+        <Typography variant="h4" component="h2">
+          Lista de Productos
+        </Typography>
+        <br />
         <div style={{ display: "flex", flexDirection: "column" }}>
           <TableContainer>
             <Table>
